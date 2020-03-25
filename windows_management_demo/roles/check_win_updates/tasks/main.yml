@@ -81,7 +81,7 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: "CalvinGTILAB"
+    username: "calvingtilab@gmail.com"
     password: "Chin199382"
     to: Test <calvinchin0802@gmail.com>
     subject: "Ansible Report"
