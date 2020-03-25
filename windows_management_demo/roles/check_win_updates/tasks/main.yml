@@ -91,6 +91,6 @@
  # run_once: yes
  
 - name: Store file
-  fetch:
+  copy:
     src: reports/Consolidated_VMs_Report.html
-    dest: /home/calvin/Documents/
+    dest: /home/calvin/Documents/report.html
