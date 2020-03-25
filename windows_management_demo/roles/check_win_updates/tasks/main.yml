@@ -80,7 +80,7 @@
 - name: Send Email with Report
   mail:
     host: smtp.gmail.com
-    port: 587
+    port: 465
     username: calvingtilab@gmail.com
     password: Chin199382
     to: Test <calvinchin0802@gmail.com>
