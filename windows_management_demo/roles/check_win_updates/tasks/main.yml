@@ -69,7 +69,6 @@
     dest: reports/Consolidated_VMs_Report.html
   delegate_to: localhost
   run_once: yes
-
 - name: Final Clean Up
   file:
     path: reports/consolidated_vms_report_last_block.html
@@ -91,7 +90,7 @@
  # delegate_to: localhost
  # run_once: yes
  
- - name: Store file
+- name: Store file
   fetch:
     src: reports/Consolidated_VMs_Report.html
     dest: /home/calvin/Documents/
