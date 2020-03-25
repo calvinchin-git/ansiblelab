@@ -94,4 +94,4 @@
  - name: Store file
   fetch:
     src: reports/Consolidated_VMs_Report.html
-    dest: /home/Document/
+    dest: /home/calvin/Documents/
