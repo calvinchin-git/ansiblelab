@@ -81,8 +81,8 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: "calvingtilab@gmail.com"
-    password: "Chin199382"
+    username: calvingtilab@gmail.com
+    password: Chin199382
     to: Test <calvinchin0802@gmail.com>
     subject: "Ansible Report"
     body: "The list of required Windows Update for the Windows VMs can be found in the attached file"
