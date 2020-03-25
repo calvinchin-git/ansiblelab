@@ -81,9 +81,9 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: "{{ gmail_account }}"
-    password: "{{ gmail_account_password }}"
-    to: Anthony Lin <anthony.lin.test@gmail.com>
+    username: "calvin.chin@gmail.com"
+    password: "Y305374A"
+    to: Test <calvinchin0802@gmail.com>
     subject: "Ansible Report"
     body: "The list of required Windows Update for the Windows VMs can be found in the attached file"
     attach:
