@@ -77,16 +77,21 @@
   delegate_to: localhost
   run_once: yes
 
-- name: Send Email with Report
-  mail:
-    host: smtp.gmail.com
-    port: 465
-    username: calvingtilab@gmail.com
-    password: Chin199382
-    to: Test <calvinchin0802@gmail.com>
-    subject: "Ansible Report"
-    body: "The list of required Windows Update for the Windows VMs can be found in the attached file"
-    attach:
-     - reports/Consolidated_VMs_Report.html
-  delegate_to: localhost
-  run_once: yes
+#- name: Send Email with Report
+# mail:
+#    host: smtp.gmail.com
+#    port: 465
+#    username: calvingtilab@gmail.com
+#    password: Chin199382
+#    to: Test <calvinchin0802@gmail.com>
+#    subject: "Ansible Report"
+#    body: "The list of required Windows Update for the Windows VMs can be found in the attached file"
+ #   attach:
+#     - reports/Consolidated_VMs_Report.html
+ # delegate_to: localhost
+ # run_once: yes
+ 
+ - name: Store file
+  fetch:
+    src: reports/Consolidated_VMs_Report.html
+    dest: /home/Document/
