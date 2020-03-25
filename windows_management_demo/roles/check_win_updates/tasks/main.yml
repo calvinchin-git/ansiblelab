@@ -77,7 +77,7 @@
   run_once: yes
 
 - name: Send Email with Report
- mail:
+  mail:
     host: smtp.gmail.com
     port: 587
     username: calvingtilab@gmail.com
@@ -85,7 +85,7 @@
     to: Test <calvinchin0802@gmail.com>
     subject: "Ansible Report"
     body: "The list of required Windows Update for the Windows VMs can be found in the attached file"
-   attach:
+    attach:
      - reports/Consolidated_VMs_Report.html
-   delegate_to: localhost
+  delegate_to: localhost
   run_once: yes
