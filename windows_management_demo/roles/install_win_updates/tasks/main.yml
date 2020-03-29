@@ -1,7 +1,7 @@
 ---
 - name: Install Windows Updates
   win_updates:
-    category_names: SecurityUpdates
-    whitelist: KB4538461
-    reboot: yes
-
+    category_names: "{{ win_update_category }}"
+    blacklist: "{{ win_update_blacklist }}"
+    whitelist: "{{ win_update_whitelist }}"
+    reboot: "{{ automatic_reboot_after_update }}"
