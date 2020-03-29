@@ -5,3 +5,5 @@
     blacklist: "{{ win_update_blacklist }}"
     whitelist: "{{ win_update_whitelist }}"
     reboot: "{{ automatic_reboot_after_update }}"
+  delegate_to: localhost
+  run_once: yes
