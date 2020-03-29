@@ -4,5 +4,4 @@
     category_names: SecurityUpdates
     whitelist: KB4538461
     reboot: yes
-  delegate_to: localhost
 
